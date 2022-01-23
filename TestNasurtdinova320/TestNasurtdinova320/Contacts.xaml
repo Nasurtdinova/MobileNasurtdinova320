@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestNasurtdinova320.Contacts"
+             Title="Контакты">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="40,30,40,30">
+                <Label Text="Телефон" TextColor="black"></Label>
+                <Frame
+                    Padding="0"
+                    BorderColor="Black" BackgroundColor="#CBCBCB">
+                    <Entry x:Name="phoneEntry" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="40,0,40,30">
+                <Label Text="Телефон" TextColor="black"></Label>
+                <Frame
+                    Padding="0" BackgroundColor="#CBCBCB"
+                    BorderColor="Black">
+                    <Entry x:Name="phone2Entry" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="40,0,40,30">
+                <Label Text="Email" TextColor="black"></Label>
+                <Frame
+                    Padding="0" BackgroundColor="#CBCBCB"
+                    BorderColor="Black">
+                    <Entry x:Name="emailEntry" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="40,0,40,30">
+                <Label Text="Адрес" TextColor="black"></Label>
+                <Frame
+                    Padding="0" BackgroundColor="#CBCBCB"
+                    BorderColor="Black">
+                    <Entry x:Name="addressEntry" />
+                </Frame>
+            </StackLayout>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
