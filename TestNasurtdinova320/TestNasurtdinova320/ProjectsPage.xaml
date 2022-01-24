@@ -5,10 +5,10 @@
     <NavigationPage.TitleView>
         <Label Text="Проекты" FontSize="Large" TextColor="White"  Margin="90,0"></Label>
     </NavigationPage.TitleView>
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
-            <ListView x:Name="projectsList"  ItemSelected="projectsList_ItemSelected">
-            </ListView>
+            <ListView x:Name="projectsList" BackgroundColor="White" ItemsSource="{Binding projects}" ItemSelected="projectsList_ItemSelected"></ListView>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
+   
 </ContentPage>

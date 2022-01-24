@@ -6,49 +6,38 @@
         <Label Text="Регистрация" FontSize="Large" TextColor="White"  Margin="75,0"></Label>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="140"></RowDefinition>
-                <RowDefinition Height="90"></RowDefinition>
-                <RowDefinition Height="80"></RowDefinition>
-                <RowDefinition Height="80"></RowDefinition>
-                <RowDefinition Height="90"></RowDefinition>
-            </Grid.RowDefinitions>
-            <StackLayout>
-                <StackLayout Margin="30,40,30,0">
-                    <Label Text="Email" TextColor="black"></Label>
-                    <Frame  Grid.Row="0" Margin="0,0,0,30"
-                    Padding="0"
-                    BorderColor="Black">
-                        <Entry x:Name="emailEntry" />
-                    </Frame>
-                    <Label Text="Логин" TextColor="black"></Label>
-                    <Frame  Grid.Row="1" Margin="0,0,0,30"
-                    Padding="0"
-                    BorderColor="Black">
-                        <Entry x:Name="loginEntry" />
-                    </Frame>
-                    <Label Text="Пароль" TextColor="black"></Label>
-                    <Frame Grid.Row="2" Margin="0,0,0,30"
-                    Padding="0"
-                    BorderColor="Black">
-                        <Entry x:Name="passwordEntry" IsPassword ="True" />
-                    </Frame>
 
-
-                    <Label Text="Пароль" TextColor="black"></Label>
-                    <Frame  Grid.Row="3" Margin="0,0,0,30"
+        <StackLayout>
+            <StackLayout Margin="30,40,30,0">
+                <Label Text="Email" TextColor="black"></Label>
+                <Frame  Grid.Row="0" Margin="0,0,0,30" Padding="0" BorderColor="Black">
+                    <Entry x:Name="emailEntry" />
+                </Frame>
+                <Label Text="Логин" TextColor="black"></Label>
+                <Frame  Grid.Row="1" Margin="0,0,0,30"
                     Padding="0"
                     BorderColor="Black">
-                        <Entry x:Name="password2Entry" IsPassword ="True" />
-                    </Frame>
+                    <Entry x:Name="loginEntry" />
+                </Frame>
+                <Label Text="Пароль" TextColor="black"></Label>
+                <Frame Grid.Row="2" Margin="0,0,0,30"
+                    Padding="0"
+                    BorderColor="Black">
+                    <Entry x:Name="passwordEntry" IsPassword ="True" />
+                </Frame>
 
-                </StackLayout>
-                <StackLayout Grid.Row="4" Margin="0,0,0,30">
-                    <Button Text="Зарегистрироваться" Clicked="Button_Clicked" HorizontalOptions="Center"></Button>
-                </StackLayout>
+                <Label Text="Пароль" TextColor="black"></Label>
+                <Frame  Grid.Row="3" Margin="0,0,0,30"
+                    Padding="0"
+                    BorderColor="Black">
+                    <Entry x:Name="password2Entry" IsPassword ="True" />
+                </Frame>
+
             </StackLayout>
-        </Grid>
-      
+            <StackLayout Grid.Row="4" Margin="0,0,0,30" HorizontalOptions="Center">
+                <Button Text="Зарегистрироваться" Clicked="Button_Clicked_1"></Button>
+            </StackLayout>
+        </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

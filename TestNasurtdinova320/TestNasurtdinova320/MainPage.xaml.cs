@@ -22,8 +22,8 @@ namespace TestNasurtdinova320
 
         private async void Button_Login_Clicked(object sender, EventArgs e)
         {
-           // var ProjectsPage = new ProjectsPage();
-            //NavigationPage.SetHasBackButton(ProjectsPage, false);
+           var ProjectsPage = new ProjectsPage();
+            NavigationPage.SetHasBackButton(ProjectsPage, false);
             await Navigation.PushAsync(new ProjectsPage());
         }
     }
