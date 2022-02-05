@@ -4,12 +4,12 @@
              x:Class="TestNasurtdinova320.InfoProject"
              Title="О проекте">
     <ScrollView>
-        <StackLayout >
-            <Label Margin="10,20,10,0" HorizontalTextAlignment="Center" x:Name="infoFirst"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoSecond"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoThird"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoFourth"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoFifth"></Label>
+        <StackLayout Padding="10" Spacing="10">
+            <Label HorizontalTextAlignment="Center" x:Name="infoFirst"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoSecond"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoThird"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoFourth"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoFifth"></Label>
         </StackLayout>
     </ScrollView>
 </ContentPage>

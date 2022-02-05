@@ -4,43 +4,34 @@
              x:Class="TestNasurtdinova320.Contacts"
              Title="Контакты">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Margin="40,30,40,30">
+        <StackLayout Padding="50" Spacing="30">
+            <StackLayout>
                 <Label Text="Телефон" TextColor="black"></Label>
-                <Frame
-                    Padding="0"
-                    BorderColor="Black" BackgroundColor="#CBCBCB">
+                <Frame BackgroundColor="#DBDBDB">
                     <Entry x:Name="phoneEntry" />
                 </Frame>
             </StackLayout>
-
-            <StackLayout Margin="40,0,40,30">
+           
+            <StackLayout>
                 <Label Text="Телефон" TextColor="black"></Label>
-                <Frame
-                    Padding="0" BackgroundColor="#CBCBCB"
-                    BorderColor="Black">
+                <Frame BackgroundColor="#DBDBDB">
                     <Entry x:Name="phone2Entry" />
                 </Frame>
             </StackLayout>
-
-            <StackLayout Margin="40,0,40,30">
+               
+            <StackLayout>
                 <Label Text="Email" TextColor="black"></Label>
-                <Frame
-                    Padding="0" BackgroundColor="#CBCBCB"
-                    BorderColor="Black">
+                <Frame BackgroundColor="#DBDBDB" >
                     <Entry x:Name="emailEntry" />
                 </Frame>
             </StackLayout>
 
-            <StackLayout Margin="40,0,40,30">
+            <StackLayout>
                 <Label Text="Адрес" TextColor="black"></Label>
-                <Frame
-                    Padding="0" BackgroundColor="#CBCBCB"
-                    BorderColor="Black">
+                <Frame BackgroundColor="#DBDBDB">
                     <Entry x:Name="addressEntry" />
                 </Frame>
             </StackLayout>
-          
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

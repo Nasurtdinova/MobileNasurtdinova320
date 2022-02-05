@@ -1,25 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TestNasurtdinova320.MainPage">
-
+             x:Class="TestNasurtdinova320.MainPage" NavigationPage.HasNavigationBar="False">
     <StackLayout>
-
-        <StackLayout>
-            <Image Source="image.jpg" Margin="30"/>
-            <StackLayout Margin="40,0,40,30">
+        <Image Source="image.jpg" Margin="30"/>
+        <StackLayout Margin="50" Spacing="30">
+            <StackLayout>
                 <Label Text="Логин"  TextColor="black"></Label>
-                <Frame
-                    Padding="0"
-                    BorderColor="Black">
+                <Frame>
                     <Entry x:Name="loginEntry" />
                 </Frame>
             </StackLayout>
-            <StackLayout Margin="40,0,40,30">
-                <Label Text="Пароль" TextColor="black"></Label>
-                <Frame
-                    Padding="0"
-                    BorderColor="Black">
+            <StackLayout>
+            <Label Text="Пароль" TextColor="black"></Label>
+                <Frame>
                     <Entry x:Name="passwordEntry" IsPassword ="True" />
                 </Frame>
             </StackLayout>
@@ -28,7 +22,5 @@
             <Button Text="Зарегистрироваться" Clicked="Button_Registr_Clicked"></Button>
             <Button Text="Войти" Clicked="Button_Login_Clicked"></Button>
         </StackLayout>
-
     </StackLayout>
-
 </ContentPage>
