@@ -3,40 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.Images"
              Title="Картинки">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <StackLayout >
-            <StackLayout Orientation="Horizontal">
-                <Image Source="project.jpg" Grid.Column="0" Grid.Row="0" Margin="22,20,20,10"></Image>
-                <Image Source="project.jpg" Grid.Column="0" Grid.Row="1" Margin="0,20,20,10"></Image>
-            </StackLayout>
-            
-            <StackLayout Orientation="Horizontal">
-                <Image Source="project.jpg" Grid.Column="0" Grid.Row="2" Margin="22,0"></Image>
-                <Image Source="project.jpg" Grid.Column="0" Grid.Row="3"></Image>
-            </StackLayout>
-           
-            <StackLayout Orientation="Horizontal">
-                <Image Source="project.jpg" Grid.Column="1" Grid.Row="0" Margin="22,10"></Image>
-                <Image Source="project.jpg" Grid.Column="1" Grid.Row="1"></Image>
-            </StackLayout>
-            
-            <StackLayout Orientation="Horizontal">
-                <Image Source="project.jpg" Grid.Column="1" Grid.Row="2" Margin="22,0"></Image>
-                <Image Source="project.jpg" Grid.Column="1" Grid.Row="3"></Image>
-            </StackLayout>
-            
+    <StackLayout Padding="10" Spacing="20">
+        <StackLayout Orientation="Horizontal">
+            <Image Source="project.jpg"></Image>
+            <Image Source="project.jpg"></Image>
         </StackLayout>
-        
-    </Grid>
+
+        <StackLayout Orientation="Horizontal">
+            <Image Source="project.jpg"></Image>
+            <Image Source="project.jpg"></Image>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Image Source="project.jpg"></Image>
+            <Image Source="project.jpg"></Image>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Image Source="project.jpg"></Image>
+            <Image Source="project.jpg"></Image>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

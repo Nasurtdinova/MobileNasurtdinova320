@@ -4,43 +4,11 @@
              x:Class="TestNasurtdinova320.Contacts"
              Title="Контакты">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Margin="40,30,40,30">
-                <Label Text="Телефон" TextColor="black"></Label>
-                <Frame
-                    Padding="0"
-                    BorderColor="Black" BackgroundColor="#CBCBCB">
-                    <Label Text="{Binding Phone}" />
-                </Frame>
-            </StackLayout>
-
-            <StackLayout Margin="40,0,40,30">
-                <Label Text="Телефон" TextColor="black"></Label>
-                <Frame
-                    Padding="0" BackgroundColor="#CBCBCB"
-                    BorderColor="Black">
-                    <Label Text="{Binding Phone}" />
-                </Frame>
-            </StackLayout>
-
-            <StackLayout Margin="40,0,40,30">
-                <Label Text="Email" TextColor="black"></Label>
-                <Frame
-                    Padding="0" BackgroundColor="#CBCBCB"
-                    BorderColor="Black">
-                    <Label Text="{Binding Email}" />
-                </Frame>
-            </StackLayout>
-
-            <StackLayout Margin="40,0,40,30">
-                <Label Text="Адрес" TextColor="black"></Label>
-                <Frame
-                    Padding="0" BackgroundColor="#CBCBCB"
-                    BorderColor="Black">
-                    <Label Text="{Binding Address}" />
-                </Frame>
-            </StackLayout>
-          
+        <StackLayout Padding="30" Spacing="30">
+            <Entry Text="{Binding Phone}" Placeholder="Телефон №1"/>
+            <Entry Text="{Binding Phone}"  Placeholder="Телефон №1"/>
+            <Entry Text="{Binding Email}" Placeholder="Телефон №1"/>
+            <Entry Text="{Binding Address}" Placeholder="Телефон №1"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
