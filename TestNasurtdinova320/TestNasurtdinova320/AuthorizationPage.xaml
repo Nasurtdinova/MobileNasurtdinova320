@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestNasurtdinova320.MainPage">
+
+    <StackLayout>
+
+        <StackLayout>
+
+            <Image Source="image.jpg" Aspect="AspectFit"/>
+            <StackLayout Margin="40,0,40,30">
+                <Entry x:Name="loginEntry" Placeholder="Логин"/>
+                <Entry x:Name="passwordEntry" Placeholder="Пароль" IsPassword ="True" />
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Зарегистрироваться" Clicked="Button_Registr_Clicked"></Button>
+            <Button Text="Войти" Clicked="Button_Login_Clicked"></Button>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

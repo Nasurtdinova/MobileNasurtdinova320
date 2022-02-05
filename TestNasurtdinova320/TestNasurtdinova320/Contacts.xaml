@@ -10,7 +10,7 @@
                 <Frame
                     Padding="0"
                     BorderColor="Black" BackgroundColor="#CBCBCB">
-                    <Entry x:Name="phoneEntry" />
+                    <Label Text="{Binding Phone}" />
                 </Frame>
             </StackLayout>
 
@@ -19,7 +19,7 @@
                 <Frame
                     Padding="0" BackgroundColor="#CBCBCB"
                     BorderColor="Black">
-                    <Entry x:Name="phone2Entry" />
+                    <Label Text="{Binding Phone}" />
                 </Frame>
             </StackLayout>
 
@@ -28,7 +28,7 @@
                 <Frame
                     Padding="0" BackgroundColor="#CBCBCB"
                     BorderColor="Black">
-                    <Entry x:Name="emailEntry" />
+                    <Label Text="{Binding Email}" />
                 </Frame>
             </StackLayout>
 
@@ -37,7 +37,7 @@
                 <Frame
                     Padding="0" BackgroundColor="#CBCBCB"
                     BorderColor="Black">
-                    <Entry x:Name="addressEntry" />
+                    <Label Text="{Binding Address}" />
                 </Frame>
             </StackLayout>
           

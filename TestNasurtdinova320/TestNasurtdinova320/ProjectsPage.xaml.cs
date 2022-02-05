@@ -15,15 +15,29 @@ namespace TestNasurtdinova320
         public string[] projects { get; set; }
         public ProjectsPage()
         {
-            InitializeComponent();
-            projects = new string[] { "Проект 1", "Проект 2", "Проект 3", "Проект 4", "Проект 5", "Проект 6", "Проект 7", "Проект 8", "Проект 9", "Проект 10", "Проект 11", "Проект 12", "Проект 13", "Проект 14", "Проект 15", "Проект 16", "Проект 17", "Проект 18" };
-            this.BindingContext = this;
+            InitializeComponent();            
+        }
+
+        protected override void OnAppearing()
+        {
+            projectsList.ItemsSource = App.Database.GetItems();
+            base.OnAppearing();
         }
 
         private async void projectsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            if (e.SelectedItem != null)
-                await Navigation.PushAsync(new ProjectPage(e.SelectedItem.ToString()));
+            Project selectedProject = (Project)e.SelectedItem;
+            ProjectPage projectPage = new ProjectPage(selectedProject.Name);
+            projectPage.BindingContext = selectedProject;
+            await Navigation.PushAsync(projectPage);
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Project project = new Project();
+            AddProjectPage projectPage = new AddProjectPage();
+            projectPage.BindingContext = project;
+            await Navigation.PushAsync(projectPage);
         }
     }
 }

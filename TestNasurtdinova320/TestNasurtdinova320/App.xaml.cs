@@ -1,11 +1,28 @@
 ﻿using System;
 using Xamarin.Forms;
+using System.IO;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("MaterialIcons-Regular.ttf", Alias = "Font")]
 namespace TestNasurtdinova320
 {
     public partial class App : Application
     {
+        public const string DATABASE_NAME = "projects.db";
+        public static ProjectsRepository database;
+        public static ProjectsRepository Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new ProjectsRepository(
+                        Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME));
+                }
+                return database;
+            }
+        }
         public App()
         {
             InitializeComponent();

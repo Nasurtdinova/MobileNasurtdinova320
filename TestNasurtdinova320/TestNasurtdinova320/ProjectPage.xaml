@@ -3,7 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TestNasurtdinova320"
             x:Class="TestNasurtdinova320.ProjectPage">
     <NavigationPage.TitleView>
-        <Label x:Name="titles"  FontSize="Large" TextColor="White"  Margin="75,0"></Label>
+        <StackLayout Padding="0,0,20,0" Orientation="Horizontal">
+            <Label  x:Name="titles" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand"></Label>
+            <Label
+                x:Name="ggwp"
+                FontFamily="Font"
+      
+                HorizontalOptions="EndAndExpand"
+                Text="&#xe148;"
+                TextColor="White">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
     </NavigationPage.TitleView>
     <TabbedPage.Children>
         <local:InfoProject />

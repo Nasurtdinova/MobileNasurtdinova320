@@ -3,11 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.ProjectsPage">
     <NavigationPage.TitleView>
-        <Label Text="Проекты" FontSize="Large" TextColor="White"  Margin="90,0"></Label>
+        <StackLayout Padding="0,0,20,0" Orientation="Horizontal">
+            <Label Text="Проекты" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand"></Label>
+            <Label
+                x:Name="ggwp"
+                FontFamily="Font"
+                FontSize="Title"
+                HorizontalOptions="EndAndExpand"
+                Text="&#xe145;"
+                TextColor="White">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
     </NavigationPage.TitleView>
     <ScrollView>
         <StackLayout>
-            <ListView x:Name="projectsList" BackgroundColor="White" ItemsSource="{Binding projects}" ItemSelected="projectsList_ItemSelected"></ListView>
+            <ListView x:Name="projectsList" ItemsSource="{Binding}" ItemSelected="projectsList_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}" FontSize="Medium" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ScrollView>
    

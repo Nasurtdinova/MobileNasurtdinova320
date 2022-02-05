@@ -5,11 +5,7 @@
              Title="О проекте">
     <ScrollView>
         <StackLayout >
-            <Label Margin="10,20,10,0" HorizontalTextAlignment="Center" x:Name="infoFirst"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoSecond"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoThird"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoFourth"></Label>
-            <Label Margin="10" HorizontalTextAlignment="Center" x:Name="infoFifth"></Label>
+            <Label Text="{Binding Description}" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

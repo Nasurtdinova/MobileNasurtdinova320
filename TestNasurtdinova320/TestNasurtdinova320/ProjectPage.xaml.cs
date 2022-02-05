@@ -17,5 +17,12 @@ namespace TestNasurtdinova320
             InitializeComponent();
             titles.Text = title;
         }
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Project project = new Project();
+            EditProjectPage projectPage = new EditProjectPage();
+            projectPage.BindingContext = project;
+            await Navigation.PushAsync(projectPage);
+        }
     }
 }

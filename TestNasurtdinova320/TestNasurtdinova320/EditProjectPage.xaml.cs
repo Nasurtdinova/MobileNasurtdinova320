@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TestNasurtdinova320
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class InfoProject : ContentPage
+    public partial class EditProjectPage : ContentPage
     {
-        public InfoProject()
+        public EditProjectPage()
         {
             InitializeComponent();
         }
