@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Android.App;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace TestNasurtdinova320
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+    [Activity(NoHistory = true)]
     public partial class ProjectsPage : ContentPage
     {
         public string[] projects { get; set; }
@@ -38,6 +40,12 @@ namespace TestNasurtdinova320
             AddProjectPage projectPage = new AddProjectPage();
             projectPage.BindingContext = project;
             await Navigation.PushAsync(projectPage);
+        }
+
+        
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
         }
     }
 }

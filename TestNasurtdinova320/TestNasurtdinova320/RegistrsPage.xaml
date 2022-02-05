@@ -3,38 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.RegistrsPage">
     <NavigationPage.TitleView>
-        <Label Text="Регистрация" FontSize="Large" TextColor="White"  Margin="75,0"></Label>
+        <Label Text="Регистрация" FontSize="Large" TextColor="White" Margin="50,0"></Label>
     </NavigationPage.TitleView>
     <ContentPage.Content>
 
         <StackLayout>
-            <StackLayout Margin="30,40,30,0">
-                <Label Text="Email" TextColor="black"></Label>
-                <Frame  Grid.Row="0" Margin="0,0,0,30" Padding="0" BorderColor="Black">
-                    <Entry x:Name="emailEntry" />
-                </Frame>
-                <Label Text="Логин" TextColor="black"></Label>
-                <Frame  Grid.Row="1" Margin="0,0,0,30"
-                    Padding="0"
-                    BorderColor="Black">
-                    <Entry x:Name="loginEntry" />
-                </Frame>
-                <Label Text="Пароль" TextColor="black"></Label>
-                <Frame Grid.Row="2" Margin="0,0,0,30"
-                    Padding="0"
-                    BorderColor="Black">
-                    <Entry x:Name="passwordEntry" IsPassword ="True" />
-                </Frame>
-
-                <Label Text="Пароль" TextColor="black"></Label>
-                <Frame  Grid.Row="3" Margin="0,0,0,30"
-                    Padding="0"
-                    BorderColor="Black">
-                    <Entry x:Name="password2Entry" IsPassword ="True" />
-                </Frame>
-
+            <StackLayout Padding="40" Spacing="40">
+                <Entry x:Name="emailEntry" Placeholder="Email"/>
+                <Entry x:Name="loginEntry" Placeholder="Login"/>
+                <Entry x:Name="passwordEntry" IsPassword ="True" Placeholder="Password"/>
+                <Entry x:Name="password2Entry" IsPassword ="True" Placeholder="Password"/>
             </StackLayout>
-            <StackLayout Grid.Row="4" Margin="0,0,0,30" HorizontalOptions="Center">
+            <StackLayout Margin="80" HorizontalOptions="Center">
                 <Button Text="Зарегистрироваться" Clicked="Button_Clicked_1"></Button>
             </StackLayout>
         </StackLayout>
