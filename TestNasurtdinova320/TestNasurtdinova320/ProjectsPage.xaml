@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.ProjectsPage" NavigationPage.HasBackButton="False">
     <NavigationPage.TitleView>
-        <StackLayout Padding="0,0,20,0" Orientation="Horizontal">
-            <Label Text="Проекты" FontSize="Large"  HorizontalOptions="CenterAndExpand" TextColor="White" ></Label>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Проекты" FontSize="Large"  Margin="110,0,100,0"   TextColor="White" ></Label>
             <Label
                 FontFamily="Font"
                 FontSize="Title"
                 Text="&#xe145;"
-                HorizontalOptions="EndAndExpand"
+               
                 TextColor="White">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
