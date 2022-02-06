@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.ProjectsPage">
     <NavigationPage.TitleView>
-        <StackLayout  Orientation="Horizontal">
-            <Label Text="Проекты" FontSize="Large" Padding="0,0,40,0"  HorizontalOptions="CenterAndExpand" TextColor="White" ></Label>
+        <StackLayout Padding="0,0,50,0" Orientation="Horizontal">
+            <Label Text="Проекты" FontSize="Large"  HorizontalOptions="CenterAndExpand" TextColor="White" ></Label>
             <Label
                 FontFamily="Font"
                 FontSize="Title"
@@ -19,13 +19,13 @@
     </NavigationPage.TitleView>
     <ScrollView>
         <StackLayout>
-            <ListView x:Name="projectsList" ItemsSource="{Binding}" ItemSelected="projectsList_ItemSelected">
+            <ListView x:Name="projectsList" SeparatorColor="Black" ItemsSource="{Binding}"  ItemSelected="projectsList_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Padding="10" Text="{Binding Name}" FontSize="Medium" />
+                                    <Label Padding="10" Text="{Binding Name}" TextColor="Black" FontSize="Medium" />
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

@@ -21,14 +21,15 @@
         <StackLayout>
             <StackLayout Padding="20" Spacing="10">
                 <Entry Text="{Binding Name}"/>
-                <Entry Text="{Binding Description}"/>
+                <Editor Text="{Binding Description}"/>
                 <Entry Text="{Binding Email}"/>
                 <Entry Text="{Binding Phone}"/>
                 <Entry Text="{Binding Address}"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
-                <Button Text="Сохранить" Clicked="SaveProject" />
+              
                 <Button Text="Отмена" Clicked="Cancel" />
+                <Button Text="Изменить" Clicked="SaveProject" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

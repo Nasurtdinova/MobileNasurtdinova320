@@ -16,8 +16,9 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
-                <Button Text="Сохранить" Clicked="SaveProject" />
+               
                 <Button Text="Отмена" Clicked="Cancel" />
+                <Button Text="Добавить" Clicked="SaveProject" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
