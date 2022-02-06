@@ -16,5 +16,12 @@ namespace TestNasurtdinova320
         {
             InitializeComponent();
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var project = (Project)BindingContext;
+            App.Database.DeleteItem(project.Id);
+            this.Navigation.PopAsync();
+        }
     }
 }

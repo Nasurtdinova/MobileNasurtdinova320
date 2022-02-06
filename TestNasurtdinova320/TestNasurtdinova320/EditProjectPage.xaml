@@ -3,7 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.EditProjectPage">
     <NavigationPage.TitleView>
-        <Label Text="Изменить проект" FontSize="Large" TextColor="White" HorizontalOptions="Center"></Label>
+        <StackLayout Padding="0,0,20,0" Orientation="Horizontal">
+            <Label Text="Изменить проект" FontSize="Large" TextColor="White" HorizontalOptions="Center"></Label>
+            <Label
+                FontFamily="Font"
+                FontSize="Title"
+                Text="&#xe16c;"
+                HorizontalOptions="EndAndExpand"
+                TextColor="White">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>

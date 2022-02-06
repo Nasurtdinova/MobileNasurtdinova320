@@ -8,7 +8,6 @@
             <Label
                 x:Name="ggwp"
                 FontFamily="Font"
-      
                 HorizontalOptions="EndAndExpand"
                 Text="&#xe150;"
                 TextColor="White">
