@@ -21,7 +21,7 @@ namespace TestNasurtdinova320
         {
             var project = (Project)BindingContext;
             App.Database.DeleteItem(project.Id);
-            this.Navigation.PopAsync();
+            Navigation.PushAsync(new ProjectsPage());
         }
 
         private void SaveProject(object sender, EventArgs e)

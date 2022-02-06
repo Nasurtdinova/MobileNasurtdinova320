@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.Contacts"
-             Title="Контакты">
+             Title="Контакты" >
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="30">
-            <Entry Text="{Binding Phone}" Placeholder="Телефон №1"/>
-            <Entry Text="{Binding Phone}"  Placeholder="Телефон №1"/>
-            <Entry Text="{Binding Email}" Placeholder="Телефон №1"/>
-            <Entry Text="{Binding Address}" Placeholder="Телефон №1"/>
+        <StackLayout Padding="30" Spacing="20">
+            <Label Text="{Binding Phone}" BackgroundColor="#E5E5E5" HeightRequest="35" Padding="5" VerticalTextAlignment="Center"/>
+            <Label Text="{Binding Phone}"  BackgroundColor="#E5E5E5" HeightRequest="35" Padding="5" VerticalTextAlignment="Center"/>
+            <Label Text="{Binding Email}" BackgroundColor="#E5E5E5" HeightRequest="35" Padding="5" VerticalTextAlignment="Center"/>
+            <Label Text="{Binding Address}" BackgroundColor="#E5E5E5" HeightRequest="35" Padding="5" VerticalTextAlignment="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

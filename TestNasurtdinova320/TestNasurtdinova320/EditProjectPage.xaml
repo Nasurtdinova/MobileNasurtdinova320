@@ -18,6 +18,7 @@
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <StackLayout Padding="20" Spacing="10">
                 <Entry Text="{Binding Name}"/>
@@ -32,5 +33,6 @@
                 <Button Text="Изменить" Clicked="SaveProject" />
             </StackLayout>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

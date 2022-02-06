@@ -5,9 +5,8 @@
              Title="О проекте">
     <ScrollView>
         <StackLayout Padding="10">
-            <Label Text="Описание" HorizontalOptions="Center"> </Label>
-     
-            <Label Text="{Binding Description}"/>
+            <Label Text="Описание" HorizontalOptions="Center" TextColor="Black"></Label>
+            <Label Text="{Binding Description}" HorizontalOptions="Center"  TextColor="Black"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
