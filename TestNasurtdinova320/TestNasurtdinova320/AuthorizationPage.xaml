@@ -4,7 +4,7 @@
              x:Class="TestNasurtdinova320.MainPage" NavigationPage.HasNavigationBar="False">
     <StackLayout VerticalOptions="Center">
         <Image Source="image.jpg"/>
-        <StackLayout Margin="40" Spacing="30" >
+        <StackLayout Margin="30" Spacing="30" >
             <StackLayout>
                 <Label Text="Логин"  TextColor="black"></Label>
                 <Frame>
