@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.MainPage" NavigationPage.HasNavigationBar="False">
-    <StackLayout>
-        <Image Source="image.jpg" Margin="30"/>
-        <StackLayout Margin="50" Spacing="30">
+    <StackLayout VerticalOptions="Center">
+        <Image Source="image.jpg"/>
+        <StackLayout Margin="40" Spacing="30" >
             <StackLayout>
                 <Label Text="Логин"  TextColor="black"></Label>
                 <Frame>

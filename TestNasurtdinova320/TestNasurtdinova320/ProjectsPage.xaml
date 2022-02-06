@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TestNasurtdinova320.ProjectsPage">
+             x:Class="TestNasurtdinova320.ProjectsPage"
+             NavigationPage.HasBackButton="False">
     <NavigationPage.TitleView>
-        <Label Text="Проекты" FontSize="Large" TextColor="White"  Margin="65,0"></Label>
+        <Label Text="Проекты" FontSize="Large" TextColor="White"  Margin="120,0"></Label>
     </NavigationPage.TitleView>
     <ScrollView>
         <StackLayout>

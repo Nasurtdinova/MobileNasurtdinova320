@@ -25,5 +25,10 @@ namespace TestNasurtdinova320
             if (e.SelectedItem != null)
                 await Navigation.PushAsync(new ProjectPage(e.SelectedItem.ToString()));
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
     }
 }
