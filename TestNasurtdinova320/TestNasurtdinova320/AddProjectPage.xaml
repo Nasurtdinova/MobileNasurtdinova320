@@ -7,12 +7,15 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding Name}" Placeholder="Имя проекта"/>
-            <Editor Text="{Binding Description}" Placeholder="Описание проекта" HeightRequest="200"/>
-            <Entry Text="{Binding Email}" Placeholder="Email"/>
-            <Entry Text="{Binding Phone}" Placeholder="Телефон"/>
-            <Entry Text="{Binding Address}" Placeholder="Адрес"/>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Padding="20" Spacing="10">
+                <Entry Text="{Binding Name}" Placeholder="Имя проекта"/>
+                <Editor Text="{Binding Description}" Placeholder="Описание проекта" HeightRequest="200"/>
+                <Entry Text="{Binding Email}" Placeholder="Email"/>
+                <Entry Text="{Binding Phone}" Placeholder="Телефон"/>
+                <Entry Text="{Binding Address}" Placeholder="Адрес"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
                 <Button Text="Сохранить" Clicked="SaveProject" />
                 <Button Text="Отмена" Clicked="Cancel" />
             </StackLayout>

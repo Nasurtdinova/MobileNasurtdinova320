@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TestNasurtdinova320"
             x:Class="TestNasurtdinova320.ProjectPage">
     <NavigationPage.TitleView>
-        <StackLayout Padding="0,0,30,0" Orientation="Horizontal">
+        <StackLayout Padding="0,0,50,0"  Orientation="Horizontal">
             <Label  x:Name="titles" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand"></Label>
             <Label
-                x:Name="ggwp"
-                FontFamily="Font"
                 HorizontalOptions="EndAndExpand"
+                 FontSize="Title"
+                FontFamily="Font"
                 Text="&#xe150;"
                 TextColor="White">
                 <Label.GestureRecognizers>

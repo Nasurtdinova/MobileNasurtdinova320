@@ -23,5 +23,20 @@ namespace TestNasurtdinova320
             App.Database.DeleteItem(project.Id);
             this.Navigation.PopAsync();
         }
+
+        private void SaveProject(object sender, EventArgs e)
+        {
+            var project = (Project)BindingContext;
+            if (!String.IsNullOrEmpty(project.Name))
+            {
+                App.Database.SaveItem(project);
+            }
+            this.Navigation.PopAsync();
+        }
+
+        private void Cancel(object sender, EventArgs e)
+        {
+            this.Navigation.PopAsync();
+        }
     }
 }

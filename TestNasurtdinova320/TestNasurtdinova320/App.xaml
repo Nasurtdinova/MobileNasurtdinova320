@@ -10,6 +10,9 @@
         </Style>
         <Style TargetType="Entry">
             <Setter Property="BackgroundColor" Value="#E5E5E5"/>
-        </Style>    
+        </Style>
+        <Style TargetType="Editor">
+            <Setter Property="BackgroundColor" Value="#E5E5E5"/>
+        </Style>
     </Application.Resources>
 </Application>
