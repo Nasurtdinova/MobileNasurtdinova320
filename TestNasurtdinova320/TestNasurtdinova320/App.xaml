@@ -9,10 +9,17 @@
             <Setter Property="TextColor" Value="#FFFFFF"/>
         </Style>
         <Style TargetType="Entry">
-            <Setter Property="BackgroundColor" Value="#E5E5E5"/>
+            <Setter Property="BackgroundColor" Value="#E5E5E5" />
+            <Setter Property="Visual" Value="Material" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="HorizontalTextAlignment" Value="Start" />
         </Style>
         <Style TargetType="Editor">
             <Setter Property="BackgroundColor" Value="#E5E5E5"/>
+            <Setter Property="Visual" Value="Material" />
+        </Style>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BackgroundColor" Value="#00B2FF"/>
         </Style>
     </Application.Resources>
 </Application>

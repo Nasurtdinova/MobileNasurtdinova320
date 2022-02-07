@@ -17,21 +17,27 @@ namespace TestNasurtdinova320
             InitializeComponent();
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             var project = (Project)BindingContext;
-            App.Database.DeleteItem(project.Id);
-            Navigation.PushAsync(new ProjectsPage());
+            if (await DisplayAlert(" ", $"Вы хотите удалить {project.Name}?", "Да", "Нет"))
+            {              
+                App.Database.DeleteItem(project.Id);
+                await Navigation.PushAsync(new ProjectsPage());
+            }      
         }
 
-        private void SaveProject(object sender, EventArgs e)
+        private async void SaveProject(object sender, EventArgs e)
         {
             var project = (Project)BindingContext;
-            if (!String.IsNullOrEmpty(project.Name))
+            if (await DisplayAlert(" ", $"Вы хотите изменить {project.Name}?", "Да", "Нет"))
             {
-                App.Database.SaveItem(project);
+                if (!String.IsNullOrEmpty(project.Name))
+                {
+                    App.Database.SaveItem(project);
+                }
+                await this.Navigation.PopAsync();
             }
-            this.Navigation.PopAsync();
         }
 
         private void Cancel(object sender, EventArgs e)

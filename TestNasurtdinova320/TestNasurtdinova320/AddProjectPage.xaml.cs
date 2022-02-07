@@ -17,14 +17,15 @@ namespace TestNasurtdinova320
             InitializeComponent();
         }
 
-        private void SaveProject(object sender, EventArgs e)
+        private async void SaveProject(object sender, EventArgs e)
         {
             var project = (Project)BindingContext;
             if (!String.IsNullOrEmpty(project.Name))
             {
                 App.Database.SaveItem(project);
             }
-            this.Navigation.PopAsync();
+            await this.Navigation.PopAsync();
+            
         }
 
         private void Cancel(object sender, EventArgs e)

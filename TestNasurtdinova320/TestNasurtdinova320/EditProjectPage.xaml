@@ -4,13 +4,16 @@
              x:Class="TestNasurtdinova320.EditProjectPage">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Изменить проект" FontSize="Large" TextColor="White"></Label>
+            <Label Text="Изменить проект" FontSize="Large" VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" TextColor="White"></Label>
             <Label
                 FontFamily="Font"
                 FontSize="Title"
                 Text="&#xe16c;"
-                HorizontalOptions="EndAndExpand"
-                TextColor="White">
+                TextColor="White"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="End"
+                Padding="10">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                 </Label.GestureRecognizers>
@@ -27,11 +30,10 @@
                 <Entry Text="{Binding Phone}"/>
                 <Entry Text="{Binding Address}"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
-              
-                <Button Text="Отмена" Clicked="Cancel" />
-                <Button Text="Изменить" Clicked="SaveProject" />
-            </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="50">
+                    <Button Text="Отмена" Clicked="Cancel" />
+                    <Button Text="Изменить" Clicked="SaveProject" />
+                </StackLayout>
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -3,14 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TestNasurtdinova320"
             x:Class="TestNasurtdinova320.ProjectPage">
     <NavigationPage.TitleView>
-        <StackLayout Padding="0,0,50,0"  Orientation="Horizontal">
-            <Label  x:Name="titles" FontSize="Large" TextColor="White" HorizontalOptions="CenterAndExpand"></Label>
+        <StackLayout  Orientation="Horizontal">
+            <Label  x:Name="titles" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"></Label>
             <Label
-                HorizontalOptions="EndAndExpand"
                  FontSize="Title"
                 FontFamily="Font"
                 Text="&#xe150;"
-                TextColor="White">
+                TextColor="White"
+                  VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="End"
+                 Padding="10">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                 </Label.GestureRecognizers>

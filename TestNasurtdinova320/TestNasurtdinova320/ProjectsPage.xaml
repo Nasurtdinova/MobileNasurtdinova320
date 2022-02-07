@@ -4,13 +4,16 @@
              x:Class="TestNasurtdinova320.ProjectsPage" NavigationPage.HasBackButton="False">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Проекты" FontSize="Large"  Margin="110,0,100,0"   TextColor="White" ></Label>
+            <Label Text="Проекты" FontSize="Large" VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"  TextColor="White" ></Label>
             <Label
                 FontFamily="Font"
                 FontSize="Title"
                 Text="&#xe145;"
-               
-                TextColor="White">
+               VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="End"
+                TextColor="White"
+                Padding="5">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                 </Label.GestureRecognizers>

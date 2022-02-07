@@ -17,7 +17,7 @@ namespace TestNasurtdinova320
             InitializeComponent();
         }
 
-        private async void Button_Clicked_1(object sender, EventArgs e)
+        private async void btn_Register(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
         }
