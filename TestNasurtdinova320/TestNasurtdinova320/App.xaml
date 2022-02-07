@@ -19,7 +19,7 @@
             <Setter Property="Visual" Value="Material" />
         </Style>
         <Style TargetType="NavigationPage">
-            <Setter Property="BackgroundColor" Value="#00B2FF"/>
+            <Setter Property="BarBackgroundColor" Value="#00B2FF"/>
         </Style>
     </Application.Resources>
 </Application>
