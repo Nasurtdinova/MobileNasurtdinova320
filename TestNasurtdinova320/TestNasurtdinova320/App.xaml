@@ -16,7 +16,6 @@
         </Style>
         <Style TargetType="Editor">
             <Setter Property="BackgroundColor" Value="#E5E5E5"/>
-            <Setter Property="Visual" Value="Material" />
         </Style>
         <Style TargetType="NavigationPage">
             <Setter Property="BarBackgroundColor" Value="#00B2FF"/>

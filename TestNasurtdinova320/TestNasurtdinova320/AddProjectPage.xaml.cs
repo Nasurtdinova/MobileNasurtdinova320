@@ -24,8 +24,7 @@ namespace TestNasurtdinova320
             {
                 App.Database.SaveItem(project);
             }
-            await this.Navigation.PopAsync();
-            
+            await this.Navigation.PopAsync();         
         }
 
         private void Cancel(object sender, EventArgs e)
