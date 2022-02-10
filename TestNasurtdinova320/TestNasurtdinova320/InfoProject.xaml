@@ -4,9 +4,9 @@
              x:Class="TestNasurtdinova320.InfoProject"
              Title="О проекте">
     <ScrollView>
-        <StackLayout>
-            <Label Text="Описание" HorizontalOptions="Center" TextColor="Black"></Label>
-            <Editor Text="{Binding Description}" HorizontalOptions="CenterAndExpand" BackgroundColor="White" TextColor="Black"/>
+        <StackLayout Padding="5">
+            <Label Text="Описание" HorizontalOptions="Center" FontSize="Medium" TextColor="Black"></Label>
+            <Editor Text="{Binding Description}" BackgroundColor="White" TextColor="Black"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

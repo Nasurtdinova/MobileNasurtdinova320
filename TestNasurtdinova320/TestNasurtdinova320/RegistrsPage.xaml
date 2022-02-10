@@ -6,14 +6,14 @@
         <Label Text="Регистрация" FontSize="Large" TextColor="White" Margin="50,0"></Label>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Padding="40" Spacing="40">
+        <StackLayout Padding="30" Spacing="40">
+            <StackLayout  Spacing="40">
                 <Entry x:Name="emailEntry" Placeholder="Email"/>
                 <Entry x:Name="loginEntry" Placeholder="Login"/>
                 <Entry x:Name="passwordEntry" IsPassword ="True" Placeholder="Password"/>
                 <Entry x:Name="password2Entry" IsPassword ="True" Placeholder="Password"/>
             </StackLayout>
-            <StackLayout  HorizontalOptions="Center">
+            <StackLayout VerticalOptions="EndAndExpand">
                 <Button Text="Зарегистрироваться" Clicked="btn_Register"></Button>
             </StackLayout>
         </StackLayout>
