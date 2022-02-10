@@ -10,8 +10,8 @@
                 FontFamily="Font"
                 FontSize="Title"
                 Text="&#xe145;"
-               VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="End"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="End"
                 TextColor="White"
                 Padding="5">
                 <Label.GestureRecognizers>

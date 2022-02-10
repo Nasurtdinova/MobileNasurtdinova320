@@ -29,7 +29,7 @@ namespace TestNasurtdinova320
         private async void projectsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Project selectedProject = (Project)e.SelectedItem;
-            ProjectPage projectPage = new ProjectPage(selectedProject.Name);
+            ProjectPage projectPage = new ProjectPage();
             projectPage.BindingContext = selectedProject;
             await Navigation.PushAsync(projectPage);
         }
@@ -41,8 +41,7 @@ namespace TestNasurtdinova320
             projectPage.BindingContext = project;
             await Navigation.PushAsync(projectPage);
         }
-
-        
+       
         protected override bool OnBackButtonPressed()
         {
             return true;

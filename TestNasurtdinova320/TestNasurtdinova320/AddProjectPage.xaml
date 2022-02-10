@@ -6,19 +6,17 @@
         <Label Text="Добавить проект" FontSize="Large" TextColor="White" Margin="30,0"></Label>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Padding="20" Spacing="10">
+        <StackLayout Padding="30">
+            <StackLayout  Spacing="20">
                 <Entry Text="{Binding Name}" Placeholder="Имя проекта"/>
-                <Editor Text="{Binding Description}" Placeholder="Описание проекта" HeightRequest="200"/>
-                <Entry Text="{Binding Email}" Placeholder="Email"/>
+                <Editor Text="{Binding Description}" Placeholder="Описание проекта" HeightRequest="200" Visual="Default"/>
+                <Entry Text="{Binding Email}" Placeholder="E-mail"/>
                 <Entry Text="{Binding Phone}" Placeholder="Телефон"/>
                 <Entry Text="{Binding Address}" Placeholder="Адрес"/>
             </StackLayout>
-
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
-               
-                <Button Text="Отмена" Clicked="Cancel" />
-                <Button Text="Добавить" Clicked="SaveProject" />
+            <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
+                <Button Text="Отмена" Clicked="Cancel" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Добавить" Clicked="SaveProject" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

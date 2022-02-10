@@ -22,17 +22,17 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-            <StackLayout Padding="20" Spacing="10">
-                <Entry Text="{Binding Name}"/>
-                <Editor Text="{Binding Description}"/>
-                <Entry Text="{Binding Email}"/>
-                <Entry Text="{Binding Phone}"/>
-                <Entry Text="{Binding Address}"/>
+        <StackLayout Padding="30">
+            <StackLayout Spacing="20">
+                    <Entry Text="{Binding Name}" Placeholder="Имя проекта"/>
+                    <Editor Text="{Binding Description}" Placeholder="Описание"/>
+                    <Entry Text="{Binding Phone}" Placeholder="Телефон №1"/>
+                    <Entry Text="{Binding Email}" Placeholder="Email"/>
+                    <Entry Text="{Binding Address}" Placeholder="Адрес"/>
             </StackLayout>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="50">
-                    <Button Text="Отмена" Clicked="Cancel" />
-                    <Button Text="Изменить" Clicked="SaveProject" />
+                <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
+                    <Button Text="Отмена" Clicked="Cancel" HorizontalOptions="FillAndExpand"/>
+                    <Button Text="Изменить" Clicked="SaveProject" HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
         </StackLayout>
         </ScrollView>

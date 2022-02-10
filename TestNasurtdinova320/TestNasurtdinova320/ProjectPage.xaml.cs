@@ -12,10 +12,9 @@ namespace TestNasurtdinova320
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectPage : TabbedPage
     {
-        public ProjectPage(string title)
+        public ProjectPage()
         {
             InitializeComponent();
-            titles.Text = title;
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)

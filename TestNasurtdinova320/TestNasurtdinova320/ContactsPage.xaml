@@ -5,10 +5,9 @@
              Title="Контакты" >
     <ContentPage.Content>
         <StackLayout Padding="30" Spacing="20">
-            <Entry Text="{Binding Phone}"/>
-            <Entry Text="{Binding Phone}"/>
-            <Entry Text="{Binding Email}"/>
-            <Entry Text="{Binding Address}"/>
+            <Entry Text="{Binding Phone}" Placeholder="Телефон №1"/>
+            <Entry Text="{Binding Email}" Placeholder="Email"/>
+            <Entry Text="{Binding Address}" Placeholder="Адрес"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

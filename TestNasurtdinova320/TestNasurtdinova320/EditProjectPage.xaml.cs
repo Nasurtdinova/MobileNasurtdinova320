@@ -20,7 +20,7 @@ namespace TestNasurtdinova320
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             var project = (Project)BindingContext;
-            if (await DisplayAlert(" ", $"Вы хотите удалить {project.Name}?", "Да", "Нет"))
+            if (await DisplayAlert(" ", $"Вы хотите удалить {project.Name}?", "Удалить", "Отмена"))
             {              
                 App.Database.DeleteItem(project.Id);
                 await Navigation.PushAsync(new ProjectsPage());
@@ -30,7 +30,7 @@ namespace TestNasurtdinova320
         private async void SaveProject(object sender, EventArgs e)
         {
             var project = (Project)BindingContext;
-            if (await DisplayAlert(" ", $"Вы хотите изменить {project.Name}?", "Да", "Нет"))
+            if (await DisplayAlert(" ", $"Вы хотите изменить {project.Name}?", "Изменить", "Отмена"))
             {
                 if (!String.IsNullOrEmpty(project.Name))
                 {

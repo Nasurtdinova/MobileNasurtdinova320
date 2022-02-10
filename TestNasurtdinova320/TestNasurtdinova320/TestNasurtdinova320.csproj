@@ -39,6 +39,12 @@
     <Compile Update="ContactsPage.xaml.cs">
       <DependentUpon>ContactsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="ImagesPage.xaml.cs">
+      <DependentUpon>ImagesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="SelectedProjectsPage.xaml.cs">
+      <DependentUpon>SelectedProjectsPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -51,7 +57,7 @@
     <EmbeddedResource Update="EditProjectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Images.xaml">
+    <EmbeddedResource Update="ImagesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="InfoProject.xaml">
@@ -60,7 +66,7 @@
     <EmbeddedResource Update="ProjectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ProjectsPage.xaml">
+    <EmbeddedResource Update="SelectedProjectsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="RegistrsPage.xaml">
