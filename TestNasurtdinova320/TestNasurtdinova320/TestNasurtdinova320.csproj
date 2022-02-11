@@ -33,43 +33,43 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="AuthorizationPage.xaml.cs">
+    <Compile Update="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="ContactsPage.xaml.cs">
+    <Compile Update="Pages\InfoProjecPages\ContactsPage.xaml.cs">
       <DependentUpon>ContactsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="ImagesPage.xaml.cs">
+    <Compile Update="Pages\InfoProjecPages\ImagesPage.xaml.cs">
       <DependentUpon>ImagesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="SelectedProjectsPage.xaml.cs">
+    <Compile Update="Pages\SelectedProjectsPage.xaml.cs">
       <DependentUpon>SelectedProjectsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AddProjectPage.xaml">
+    <EmbeddedResource Update="Pages\AddProjectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ContactsPage.xaml">
+    <EmbeddedResource Update="Pages\InfoProjecPages\ContactsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="EditProjectPage.xaml">
+    <EmbeddedResource Update="Pages\EditProjectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ImagesPage.xaml">
+    <EmbeddedResource Update="Pages\InfoProjecPages\ImagesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="InfoProject.xaml">
+    <EmbeddedResource Update="Pages\InfoProjecPages\InfoProject.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ProjectPage.xaml">
+    <EmbeddedResource Update="Pages\ProjectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="SelectedProjectsPage.xaml">
+    <EmbeddedResource Update="Pages\SelectedProjectsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="RegistrsPage.xaml">
+    <EmbeddedResource Update="Pages\RegistrsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
