@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TestNasurtdinova320
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Contacts : ContentPage
+    public partial class SelectedImagePage : ContentPage
     {
-        public Contacts()
+        public SelectedImagePage()
         {
             InitializeComponent();
         }

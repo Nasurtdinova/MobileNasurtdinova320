@@ -9,21 +9,25 @@ namespace TestNasurtdinova320
         public ProjectsRepository(string databasePath)
         {
             database = new SQLiteConnection(databasePath);
-            database.CreateTable<Project>();
+            database.CreateTable<Image>();
         }
-        public IEnumerable<Project> GetItems()
+
+        public IEnumerable<Image> GetItems()
         {
-            return database.Table<Project>().ToList();
+            return database.Table<Image>().ToList();
         }
-        public Project GetItem(int id)
+
+        public Image GetItem(int id)
         {
-            return database.Get<Project>(id);
+            return database.Get<Image>(id);
         }
+
         public int DeleteItem(int id)
         {
-            return database.Delete<Project>(id);
+            return database.Delete<Image>(id);
         }
-        public int SaveItem(Project item)
+
+        public int SaveItem(Image item)
         {
             if (item.Id != 0)
             {
