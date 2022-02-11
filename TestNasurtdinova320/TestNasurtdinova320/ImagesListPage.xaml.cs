@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Android.App;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -9,12 +10,15 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.Xaml;
 
 namespace TestNasurtdinova320
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    [Activity(NoHistory = true)]
     public partial class MainPage : ContentPage
     {
-        string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        public string pathName;
         public MainPage()
         {
             InitializeComponent();
@@ -24,21 +28,19 @@ namespace TestNasurtdinova320
         {
             imgList.ItemsSource = App.Database.GetItems();
             base.OnAppearing();
-            UpdateList();
         }
 
-        void UpdateList()
+        private void UpdateList()
         {
-            imgList.ItemsSource = Directory.GetFiles(folderPath).Select(f => Path.GetFullPath(f));
-            imgList.SelectedItem = 0;
+            imgList.ItemsSource = App.Database.GetItems();          
         }
 
-        async void GetPhotoAsync(object sender, EventArgs e)
+        private async void GetPhotoAsync(object sender, EventArgs e)
         {
             try
-            {
+            {         
                 var photo = await MediaPicker.PickPhotoAsync();
-                //img.Source = ImageSource.FromFile(photo.FullPath);
+                pathName = photo.FullPath;
             }
             catch (Exception ex)
             {
@@ -46,7 +48,7 @@ namespace TestNasurtdinova320
             }
         }
 
-        async void TakePhotoAsync(object sender, EventArgs e)
+        private async void TakePhotoAsync(object sender, EventArgs e)
         {
             try
             {
@@ -61,8 +63,8 @@ namespace TestNasurtdinova320
                     await stream.CopyToAsync(newStream);
 
                 Debug.WriteLine($"Путь фото {photo.FullPath}");
-                //img.Source = ImageSource.FromFile(photo.FullPath);
-                UpdateList();
+
+                pathName = photo.FullPath;
             }
             catch (Exception ex)
             {
@@ -70,9 +72,19 @@ namespace TestNasurtdinova320
             }
         }
 
+        private void AddImage(object sender, EventArgs e)
+        {
+            Photo img = new Photo();
+            img.Name = nameImg.Text;
+            img.PathImage = pathName;              
+           
+            App.Database.SaveItem(img);
+            UpdateList();
+        }
+
         private async void imgList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Image selectedImage = (Image)e.SelectedItem;
+            Photo selectedImage = (Photo)e.SelectedItem;
             SelectedImagePage imagePage = new SelectedImagePage();
             imagePage.BindingContext = selectedImage;
             await Navigation.PushAsync(imagePage);
