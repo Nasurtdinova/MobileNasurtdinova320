@@ -7,13 +7,12 @@
             <Entry x:Name="nameImg" Placeholder="Введите название"/>
         </StackLayout>
         <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
-            <Button Clicked="TakePhotoAsync" Text="Take Photo" HorizontalOptions="FillAndExpand"/>
-            <Button Clicked="GetPhotoAsync" Text="Load Photo" HorizontalOptions="FillAndExpand"/>
+            <Button Clicked="GetPhotoAsync" Text="Галерея" HorizontalOptions="FillAndExpand"/>
+            <Button Clicked="TakePhotoAsync" Text="Камера" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
         <StackLayout>
-            <Button Clicked="AddImage" Text="Add image" />
+            <Button Clicked="AddImage" Text="Добавить" />
         </StackLayout>
-       
         <ListView
             x:Name="imgList"
             ItemSelected="imgList_ItemSelected"
@@ -30,6 +29,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
     </StackLayout>
 </ContentPage>
