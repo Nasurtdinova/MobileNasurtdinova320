@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestNasurtdinova320.Images"
-             Title="Картинки">
+             Title="Картинки" Visual="Material">
     <StackLayout Padding="10" Spacing="20">
         <StackLayout Orientation="Horizontal">
             <Image Source="project.jpg"></Image>

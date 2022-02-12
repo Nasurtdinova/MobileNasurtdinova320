@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TestNasurtdinova320.RegistrsPage">
+             x:Class="TestNasurtdinova320.RegistrsPage" Visual="Material">
     <NavigationPage.TitleView>
         <Label Text="Регистрация" FontSize="Large" TextColor="White" Margin="50,0"></Label>
     </NavigationPage.TitleView>
