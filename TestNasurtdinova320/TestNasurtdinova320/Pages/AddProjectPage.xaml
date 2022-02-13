@@ -9,9 +9,9 @@
         <StackLayout Padding="30">
             <StackLayout  Spacing="20">
                 <Entry Placeholder="Имя проекта"/>
-                <Editor Placeholder="Описание проекта"/>
-                <Entry Placeholder="E-mail"/>
+                <Editor Placeholder="Описание"/>
                 <Entry Placeholder="Телефон"/>
+                <Entry Placeholder="E-mail"/>
                 <Entry Placeholder="Адрес"/>
             </StackLayout>
             <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
