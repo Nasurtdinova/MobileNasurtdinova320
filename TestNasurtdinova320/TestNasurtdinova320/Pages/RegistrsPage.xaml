@@ -9,7 +9,7 @@
         <StackLayout Padding="30" Spacing="40">
             <StackLayout  Spacing="40">
                 <Entry x:Name="loginEntry" Placeholder="Логин"/>
-                <Entry x:Name="emailEntry" Placeholder="Email"/>
+                <Entry x:Name="emailEntry" Placeholder="Email" Keyboard="Email"/>
                 <Entry x:Name="passwordEntry" IsPassword ="True" Placeholder="Пароль"/>
                 <Entry x:Name="password2Entry" IsPassword ="True" Placeholder="Пароль"/>
             </StackLayout>

@@ -22,7 +22,7 @@ namespace TestNasurtdinova320
             var project = (Project)BindingContext;
             if (await DisplayAlert(" ", $"Вы хотите удалить {project.Name}?", "Удалить", "Отмена"))
             {              
-                App.Database.DeleteItem(project.Id);
+                App.Database.DeleteProject(project.Id);
                 await Navigation.PushAsync(new ProjectsPage());
             }      
         }
@@ -34,7 +34,7 @@ namespace TestNasurtdinova320
             {
                 if (!String.IsNullOrEmpty(project.Name))
                 {
-                    App.Database.SaveItem(project);
+                    App.Database.SaveProject(project);
                 }
                 await this.Navigation.PopAsync();
             }

@@ -9,14 +9,14 @@ namespace TestNasurtdinova320
     public partial class App : Application
     {
         public const string DATABASE_NAME = "projects.db";
-        public static ProjectsRepository database;
-        public static ProjectsRepository Database
+        public static TablesRepository database;
+        public static TablesRepository Database
         {
             get
             {
                 if (database == null)
                 {
-                    database = new ProjectsRepository(
+                    database = new TablesRepository(
                         Path.Combine(
                             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME));
                 }

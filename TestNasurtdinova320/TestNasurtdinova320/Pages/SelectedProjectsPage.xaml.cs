@@ -22,11 +22,11 @@ namespace TestNasurtdinova320
 
         protected override void OnAppearing()
         {
-            projectsList.ItemsSource = App.Database.GetItems();
+            projectsList.ItemsSource = App.Database.GetProjects();
             base.OnAppearing();
         }
 
-        private async void projectsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void ProjectsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Project selectedProject = (Project)e.SelectedItem;
             ProjectPage projectPage = new ProjectPage();
@@ -34,12 +34,9 @@ namespace TestNasurtdinova320
             await Navigation.PushAsync(projectPage);
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            Project project = new Project();
-            AddProjectPage projectPage = new AddProjectPage();
-            projectPage.BindingContext = project;
-            await Navigation.PushAsync(projectPage);
+        private async void AddProject(object sender, EventArgs e)
+        {         
+            await Navigation.PushAsync(new AddProjectPage());
         }
        
         protected override bool OnBackButtonPressed()

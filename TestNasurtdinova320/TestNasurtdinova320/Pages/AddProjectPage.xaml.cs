@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,10 +18,17 @@ namespace TestNasurtdinova320
 
         private async void SaveProject(object sender, EventArgs e)
         {
-            var project = (Project)BindingContext;
+            Project project = new Project()
+            {
+                Name = nameProject.Text,
+                Description = descriptionProject.Text,
+                Phone = phoneProject.Text,
+                Email = emailProject.Text,
+                Address = addressProject.Text
+            };
             if (!String.IsNullOrEmpty(project.Name))
             {
-                App.Database.SaveItem(project);
+                App.Database.SaveProject(project);
             }
             await this.Navigation.PopAsync();         
         }

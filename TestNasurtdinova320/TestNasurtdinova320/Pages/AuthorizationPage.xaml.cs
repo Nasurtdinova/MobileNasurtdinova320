@@ -22,9 +22,25 @@ namespace TestNasurtdinova320
 
         private async void Button_Login_Clicked(object sender, EventArgs e)
         {
-           var ProjectsPage = new ProjectsPage();
-            NavigationPage.SetHasBackButton(ProjectsPage, false);
-            await Navigation.PushAsync(new ProjectsPage());
+            var user = App.Database.GetUsers().Where(u => u.Login == loginEntry.Text && u.Password == passwordEntry.Text).ToList().FirstOrDefault();
+            if (!String.IsNullOrEmpty(user.Email) && !String.IsNullOrEmpty(user.Password))
+            {
+                if (user != null)
+                {
+                    var ProjectsPage = new ProjectsPage();
+                    NavigationPage.SetHasBackButton(ProjectsPage, false);
+                    await Navigation.PushAsync(new ProjectsPage());
+                }
+                else
+                {
+                    await DisplayAlert("Ошибка", "Неверные данные", "ОК");
+                }
+            }
+            else
+            {
+                await DisplayAlert("Ошибка", "Введите данные", "ОК");
+            }
+            
         }
     }
 }

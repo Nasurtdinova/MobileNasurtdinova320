@@ -5,7 +5,7 @@
     <StackLayout Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="50">
         <abstractions:CircleImage Source="logotip.jpg" Aspect="AspectFit" />
         <StackLayout Spacing="30">
-            <Entry x:Name="loginEntry" Placeholder="Логин"/>
+            <Entry x:Name="loginEntry" Placeholder="Логин" Keyboard="Email"/>
             <Entry x:Name="passwordEntry" Placeholder="Пароль" IsPassword ="True" />
         </StackLayout>
         <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">

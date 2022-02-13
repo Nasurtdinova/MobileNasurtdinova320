@@ -26,8 +26,8 @@
             <StackLayout Spacing="20">
                     <Entry Text="{Binding Name}" Placeholder="Имя проекта"/>
                     <Editor Text="{Binding Description}" Placeholder="Описание"/>
-                    <Entry Text="{Binding Phone}" Placeholder="Телефон №1"/>
-                    <Entry Text="{Binding Email}" Placeholder="Email"/>
+                    <Entry Text="{Binding Phone}" Placeholder="Телефон №1" Keyboard="Telephone"/>
+                    <Entry Text="{Binding Email}" Placeholder="Email" Keyboard="Email"/>
                     <Entry Text="{Binding Address}" Placeholder="Адрес"/>
             </StackLayout>
                 <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">

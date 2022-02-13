@@ -8,11 +8,11 @@
     <ContentPage.Content>
         <StackLayout Padding="30">
             <StackLayout  Spacing="20">
-                <Entry Placeholder="Имя проекта"/>
-                <Editor Placeholder="Описание"/>
-                <Entry Placeholder="Телефон"/>
-                <Entry Placeholder="E-mail"/>
-                <Entry Placeholder="Адрес"/>
+                <Entry x:Name="nameProject" Placeholder="Имя проекта"/>
+                <Editor x:Name="descriptionProject" Placeholder="Описание"/>
+                <Entry x:Name="phoneProject" Placeholder="Телефон" Keyboard="Telephone"/>
+                <Entry x:Name="emailProject" Placeholder="E-mail" Keyboard="Email"/>
+                <Entry x:Name="addressProject" Placeholder="Адрес"/>
             </StackLayout>
             <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
                 <Button Text="Отмена" Clicked="Cancel" HorizontalOptions="FillAndExpand"/>
