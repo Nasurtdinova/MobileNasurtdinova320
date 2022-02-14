@@ -20,27 +20,20 @@ namespace TestNasurtdinova320
             await Navigation.PushAsync(new RegistrsPage());
         }
 
-        private async void Button_Login_Clicked(object sender, EventArgs e)
+        private void Button_Login_Clicked(object sender, EventArgs e)
         {
             var user = App.Database.GetUsers().Where(u => u.Login == loginEntry.Text && u.Password == passwordEntry.Text).ToList().FirstOrDefault();
-            if (!String.IsNullOrEmpty(user.Email) && !String.IsNullOrEmpty(user.Password))
+            if (user != null)
             {
-                if (user != null)
-                {
-                    var ProjectsPage = new ProjectsPage();
-                    NavigationPage.SetHasBackButton(ProjectsPage, false);
-                    await Navigation.PushAsync(new ProjectsPage());
-                }
-                else
-                {
-                    await DisplayAlert("Ошибка", "Неверные данные", "ОК");
-                }
+                var ProjectsPage = new ProjectsPage();
+                NavigationPage.SetHasBackButton(ProjectsPage, false);
+                Navigation.PushAsync(new ProjectsPage());
             }
             else
             {
-                await DisplayAlert("Ошибка", "Введите данные", "ОК");
+                DisplayAlert("Ошибка", "Неверные данные", "ОК");
             }
-            
+
         }
     }
 }
